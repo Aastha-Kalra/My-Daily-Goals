@@ -21,3 +21,18 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+/src/Travel.jsx
+/src/Navbar.jsx
+/src/PageNotFound.jsx
+/src/Hotel.jsx
+/src/Hotel deals.jsx
+/src/Flights.jsx
+/src/Day.jsx
+/src/App.jsx
+/src/Car.jsx
+/src/Air.jsx
+/src/Air.css
+
+
+/public/data.json
