@@ -34,5 +34,5 @@ yarn-error.log*
 /src/Air.jsx
 /src/Air.css
 
-
+/src/Components/*
 /public/data.json

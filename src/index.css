@@ -17,13 +17,13 @@ code {
     monospace;
 }
 div{
-  font-family: cursive;
+  font-family: poppins;
 }
-button{
+/* button{
   font-family: 'Tektur';
-}
+} */
 
-.navbar{
+/* .navbar{
   margin-top: 3px;
   background-color: rgb(0, 140, 255);
 
@@ -106,4 +106,4 @@ letter-spacing: 1px;
 }
 .gal:hover .act{
   opacity: 1;
-}
+} */
