@@ -34,5 +34,14 @@ yarn-error.log*
 /src/Air.jsx
 /src/Air.css
 
-/src/Components/*
-/public/data.json
+# /src/Components
+# /public/data.json 
+
+
+/src/config.js
+/src/swDev.js
+/src/Password.jsx
+/src/Components/Logo.jsx
+/src/Components/Modal.jsx
+/src/Components/Logo.css
+/public/sw.js

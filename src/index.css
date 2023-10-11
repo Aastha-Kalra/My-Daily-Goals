@@ -9,6 +9,9 @@
 body {
   margin: 0;
   font-family:'Tektur';
+  background: #a1cc9d;
+  text-shadow:0.5px 0.5px black;
+ overflow-x: hidden;
   /* background-color: rgb(128, 236, 128);   */
   /* overflow-y: hidden; */
 }
@@ -16,9 +19,30 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
 div{
   font-family: poppins;
 }
+.header{
+  text-shadow:2px 4px 4px black;
+}
+
+.login,.signup{
+  box-shadow: 3px 4px 4px black;
+  transition: transform .9s ease-in-out;
+  transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.login:hover,.signup:hover{
+  transform: scale(1.4)
+}
+h1{
+  text-shadow: 3px 2px 3px rgb(142, 142, 45);
+}
+.add{
+  text-shadow: 3px 2px 4px rgb(57, 57, 39);
+}
+
 /* button{
   font-family: 'Tektur';
 } */
