@@ -1,0 +1,98 @@
+ [
+      {
+        "type": "ingredient",
+        "display": "air fryer",
+        "search_value": "air fryer"
+      },
+      {
+        "type": "ingredient",
+        "display": "chicken alfredo",
+        "search_value": "chicken alfredo"
+      },
+      {
+        "type": "ingredient",
+        "display": "asparagus",
+        "search_value": "asparagus"
+      },
+      {
+        "display": "beef and broccoli",
+        "search_value": "beef and broccoli",
+        "type": "ingredient"
+      },
+      {
+        "display": "avocado",
+        "search_value": "avocado",
+        "type": "ingredient"
+      },
+      {
+        "display": "apple pie",
+        "search_value": "apple pie",
+        "type": "ingredient"
+      },
+      {
+        "display": "chicken and rice",
+        "search_value": "chicken and rice",
+        "type": "ingredient"
+      },
+      {
+        "display": "appetizers",
+        "search_value": "appetizers",
+        "type": "ingredient"
+      },
+      {
+        "type": "ingredient",
+        "display": "sweet and sour chicken",
+        "search_value": "sweet and sour chicken"
+      },
+      {
+        "display": "alfredo",
+        "search_value": "alfredo",
+        "type": "ingredient"
+      },
+      {
+        "display": "baked mac and cheese",
+        "search_value": "baked mac and cheese",
+        "type": "ingredient"
+      },
+      {
+        "display": "apple",
+        "search_value": "apple",
+        "type": "ingredient"
+      },
+      {
+        "display": "mac and cheese",
+        "search_value": "mac and cheese",
+        "type": "ingredient"
+      },
+      {
+        "search_value": "air fryer chicken",
+        "type": "ingredient",
+        "display": "air fryer chicken"
+      },
+      {
+        "display": "asian",
+        "search_value": "asian",
+        "type": "ingredient"
+      },
+      {
+        "type": "ingredient",
+        "display": "alfredo sauce",
+        "search_value": "alfredo sauce"
+      },
+      {
+        "type": "ingredient",
+        "display": "spaghetti and meatballs",
+        "search_value": "spaghetti and meatballs"
+      },
+      {
+        "display": "chicken and broccoli",
+        "search_value": "chicken and broccoli",
+        "type": "ingredient"
+      },
+      {
+        "display": "spinach artichoke dip",
+        "search_value": "spinach artichoke dip",
+        "type": "ingredient"
+      }
+    
+    ]

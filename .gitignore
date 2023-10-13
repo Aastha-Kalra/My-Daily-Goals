@@ -9,7 +9,7 @@
 /coverage
 
 # production
-/build
+
 
 # misc
 .DS_Store
@@ -36,9 +36,7 @@ yarn-error.log*
 
 # /src/Components
 # /public/data.json 
-
-
-/src/config.js
+.env
 /src/swDev.js
 /src/Password.jsx
 /src/Components/Logo.jsx
