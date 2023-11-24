@@ -12,7 +12,16 @@ function Home({ user }) {
   const [title, setTitle] = useState();
   const [description, setDescription] = useState("");
   const [userTodos, setUserTodos] = useState([]);
+  const [category, setCategory] = useState('All');
   const navigate = useNavigate();
+
+  // to filter by category
+  const changeCategory = (newCategory) => {
+    setCategory(newCategory);
+  };
+
+  const filteredTasks = category === 'All' ? userTodos : userTodos.filter(task => task.category === category);
+
 
   const submit = async (e) => {
     e.preventDefault();
@@ -21,11 +30,12 @@ function Home({ user }) {
         title: title,
         description: description,
         createdAt: new Date().toLocaleDateString(),
+        category:category
       };
       // Generate a unique ID for the new todo item
       const id = Math.random().toString(36).substring(7);
       todo.id = id; // Set the id property
-      setTask([...task, todo]);
+      setTask([...task, todo, category]);
       setTitle("");
       setDescription("");
 
@@ -102,6 +112,7 @@ function Home({ user }) {
     setId(index);
     setTitle(elem.title);
     setDescription(elem.description);
+    setCategory(elem.category);
   };
 
   const editSubmit = (e) => {
@@ -112,7 +123,7 @@ function Home({ user }) {
       let item = items[id];
       item.title = title;
       item.description = description;
-
+      item.category = category;
       // Update the userTodos state with the modified list
       setUserTodos(items);
 
@@ -176,6 +187,13 @@ function Home({ user }) {
                   placeholder="Description...."
                 ></textarea>
                 <br />
+                <label htmlFor="" className="text-yellow-400 text-3xl py-1">Add a Category</label>
+                <select onChange={(e) => changeCategory(e.target.value)} value={category} className="h-10 focus:outline-none cursor-pointer">
+          <option className="cursor-pointer" value="All">All</option>
+          <option className="cursor-pointer" value="Work">Work</option>
+          <option className="cursor-pointer" value="Personal">Personal</option>
+        </select>
+        <br/>
                 <button
                   className="bg-green-600 border-lime-300 border-4 text-yellow-400 p-3 focus:outline-none text-2xl hover:bg-yellow-400 hover:text-green-500 shadow-md shadow-black  add "
                   value="submit"
@@ -231,8 +249,16 @@ function Home({ user }) {
             </div>
           )}
 
+
+<div className="text-4xl">
+        <div className="flex justify-center items-center w-full gap-5 mt-6">
+          <button className="bg-yellow-400 px-5 py-2 text-2xl" onClick={()=>changeCategory('All')} value="All">All</button>
+          <button className="bg-yellow-400 px-5 py-2 text-2xl" onClick={()=>changeCategory('Work')} value="Work">Work</button>
+          <button className="bg-yellow-400 px-5 py-2 text-2xl"  onClick={()=>changeCategory('Personal')} value="Personal">Personal</button>
+        </div>
+      </div>
           <div className="w-full px-4 py-8">
-            {userTodos.map((item, index) => {
+            {filteredTasks.map((item, index) => {
               return (
                 <div key={item.id}>
                   <Task
@@ -241,7 +267,7 @@ function Home({ user }) {
                     title={item.title}
                     description={item.description}
                     del={item.id}
-                    editFunc={editFunc}
+                    editFunc={()=>editFunc(item,index)}
                     index={index}
                     item={item}
                     edit={edit}
