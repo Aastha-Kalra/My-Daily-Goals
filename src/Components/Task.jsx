@@ -50,3 +50,4 @@ function Task({ title, description, editFunc, edit, index, deleteFunc, item, cre
 }
 
 export default Task;
+
